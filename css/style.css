@@ -304,6 +304,48 @@
 		overflow: hidden;
 		border-top: 1px solid #dbdbdb;
 	}
+    
+    .captionStrong
+    {
+        font-size: 3em;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+    .caption
+    {
+        font-size: 2em;
+        margin: auto;
+    }
+
+    .image.on.left
+    {
+        margin: 2em;
+        width: 50%;
+    }
+
+    .image.on.right
+    {
+        margin: 2em;
+        width: 50%;
+    }
+
+    .flex-container 
+    {
+        display: flex;
+    }
+
+    .flex-item
+    {
+        
+    }
+
+    .flex-center-vertically {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: inherit;
+    }
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -320,7 +362,14 @@
 	{
 		color: #FFF;
 	}
-	
+
+    #footer h3
+    {
+        color: #FFF;
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
 /*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
