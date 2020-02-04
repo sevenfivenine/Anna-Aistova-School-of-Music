@@ -298,6 +298,10 @@
 		position: relative;
 		background: #fff url(images/overlay.png) repeat;
 	}
+
+    .giveMargin {
+        margin: 0 2em;
+    }
 	
 	.divider
 	{
@@ -326,8 +330,12 @@
 
     .image.on.right
     {
-        margin: 2em;
         width: 50%;
+    }
+
+    .text.on.left
+    {
+        margin: 2em;
     }
 
     .flex-container 
