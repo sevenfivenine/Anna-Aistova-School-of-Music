@@ -71,7 +71,7 @@
                                     <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
                                 </fieldset>
                                 <fieldset>
-                                    <textarea placeholder="Type your message here...." tabindex="4" required></textarea>
+                                    <textarea name="message" id="message" placeholder="Type your message here...." tabindex="4" required></textarea>
                                 </fieldset>
                                 <fieldset>
                                     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
@@ -130,7 +130,7 @@
 							<ul class="default">
 								<li><a href="schedule.html">Schedule a lesson today</a></li>
 								<li><a href="contact.html">Or click here to ask us a question.</a></li>
-								<li><a href="#">Interested in becoming an instructor?</a></li>
+								<li><a href="contact.html#message=Hi%21%20I%27m%20interested%20in%20becoming%20an%20instructor%21%0A%0A">Interested in becoming an instructor?</a></li>
 							</ul>
 						</section>
 					</div>
@@ -146,6 +146,15 @@
 				<p>Copyright © 2020 Martin Costa. All rights reserved.</p>
 			</div>
 		</div>
+        
+        
+        <script>
+            var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+            for(var i = 0; i < hashParams.length; i++){
+                var p = hashParams[i].split('=');
+                document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
+            }
+        </script>
 
 	</body>
 </html>
